@@ -40,11 +40,11 @@ class Main extends PluginBase
       switch($data)
       {
         case 0:
-          $this->getServer()->dispatchCommand($player, "ce enchant driller . $data[0]");
+          $item->addEnchantment(new EnchantmentInstance(Driller, $data[0]));
         break;
 
         case 1:
-          $this->getServer()->dispatchCommand($player, "ce enchant luckycharm . $data[1]");
+          $item->addEnchantment(new EnchantmentInstance(Driller, $data[1]));
         break;
       }
     });
