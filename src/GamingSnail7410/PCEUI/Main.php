@@ -82,15 +82,15 @@ class Main extends PluginBase
     });
     $form->setTitle("PCEUI");
     $form->addSlider("Driller", 0, 5);
-    $form->addButton("Teleport to your island");
-    $form->addButton("Lock/Unlock your island");
-    $form->addButton("Visit someone's island");
-    $form->addButton("Leave your island");
-    $form->addButton("Delete your island");
-    $form->addButton("Kick an island member");
-    $form->addButton("Promote an island member");
-    $form->addButton("Set your island spawn");
-    $form->addButton("Add an island member");
+    $form->addSlider("Teleport to your island", 1);
+    $form->addSlider("Lock/Unlock your island", 1);
+    $form->addSlider("Visit someone's island", 1);
+    $form->addSlider("Leave your island", 1);
+    $form->addSlider("Delete your island", 1);
+    $form->addSlider("Kick an island member", 1);
+    $form->addSlider("Promote an island member", 1);
+    $form->addSlider("Set your island spawn", 1);
+    $form->addSlider("Add an island member", 1);
     $form->sendToPlayer($player);
     return $form;
   }
