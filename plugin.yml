@@ -1,1 +1,9 @@
-plugin.yml
+name: CEForm
+main: GamingSnail7410\PCEUI\Main
+author: GamingSnail7410
+api: 3.0.0
+version: 0.1
+
+commands:
+  ceui:
+    description: "Opens The Custom Enchant Form"
