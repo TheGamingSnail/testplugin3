@@ -81,7 +81,7 @@ class Main extends PluginBase
       }
     });
     $form->setTitle("PCEUI");
-    $form->addSlider("Driller" 0, 5);
+    $form->addSlider("Driller", 0, 5);
     $form->addButton("Teleport to your island");
     $form->addButton("Lock/Unlock your island");
     $form->addButton("Visit someone's island");
