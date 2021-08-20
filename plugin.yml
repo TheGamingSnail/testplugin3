@@ -1,9 +1,0 @@
-name: SkyblockForm
-main: GamingSnail7410\SkyblockForm\Main
-author: GamingSnail7410
-api: 3.0.0
-version: 0.1
-
-commands:
-  isui:
-    description: "Opens The Skyblock Form"
