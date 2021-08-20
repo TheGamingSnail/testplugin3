@@ -40,57 +40,17 @@ class Main extends PluginBase
       switch($data)
       {
         case 0:
-          $this->getServer()->dispatchCommand($player, "ce enchant driller" . data[0]);
+          $this->getServer()->dispatchCommand($player, ""ce enchant driller" . data[0]");
         break;
 
         case 1:
-          $this->getServer()->dispatchCommand($player, "is join");
-        break;
-
-        case 2:
-          $this->getServer()->dispatchCommand($player, "is lock");
-        break;
-
-        case 3:
-          $this->visit($player);
-        break;
-
-        case 4:
-          $this->getServer()->dispatchCommand($player, "is leave");
-        break;
-
-        case 5:
-          $this->getServer()->dispatchCommand($player, "is disband");
-        break;
-
-        case 6:
-          $this->kick($player);
-        break;
-
-        case 7:
-          $this->promote($player);
-        break;
-
-        case 8:
-          $this->getServer()->dispatchCommand($player, "is setspawn");
-        break;
-
-        case 9:
-          $this->add($player);
+          $this->getServer()->dispatchCommand($player, ""ce enchant luckycharm" . data[0]");
         break;
       }
     });
     $form->setTitle("PCEUI");
     $form->addSlider("Driller", 0, 5);
-    $form->addSlider("Teleport to your island", 1, 5);
-    $form->addSlider("Lock/Unlock your island", 1, 5);
-    $form->addSlider("Visit someone's island", 1, 5);
-    $form->addSlider("Leave your island", 1, 5);
-    $form->addSlider("Delete your island", 1, 5);
-    $form->addSlider("Kick an island member", 1, 5);
-    $form->addSlider("Promote an island member", 1, 5);
-    $form->addSlider("Set your island spawn", 1, 5);
-    $form->addSlider("Add an island member", 1, 5);
+    $form->addSlider("Lucky Charm", 0, 5);
     $form->sendToPlayer($player);
     return $form;
   }
